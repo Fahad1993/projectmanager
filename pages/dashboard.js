@@ -37,7 +37,7 @@ export default function Dashboard({ projects }) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <div className='text-center max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700'>
+      <div className='text-center '>
         <h1 className='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white'>Project Manager</h1>
 
         <form
