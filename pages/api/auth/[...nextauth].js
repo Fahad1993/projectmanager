@@ -11,6 +11,7 @@ export default NextAuth({
     })
   ],
 
+
   database: process.env.DATABASE_URL,
   secret: process.env.SECRET,
 
@@ -21,11 +22,11 @@ export default NextAuth({
 
   debug: true,
   adapter: PrismaAdapter(prisma),
-	
-	callbacks: {
+
+  callbacks: {
     session: async ({ session, user }) => {
       session.user.id = user.id
-			session.user.isSubscriber = user.isSubscriber
+      session.user.isSubscriber = user.isSubscriber
       return Promise.resolve(session)
     },
   },
